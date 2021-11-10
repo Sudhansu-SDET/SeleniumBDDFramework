@@ -25,7 +25,11 @@
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+        </dependency>
 
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -144,7 +148,7 @@
                         </goals>
                         <configuration>
                             <includes>
-                                <include>**/LoginRunner.java</include>
+                                <include>**/Test.java</include>
                             </includes>
 <!--                            <parallel>methods</parallel>-->
 <!--                            <threadCount>4</threadCount>-->

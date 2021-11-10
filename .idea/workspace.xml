@@ -16,7 +16,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PATH_TO_GIT" value="C:\Program Files\Git\Git-2.33.1-64-bit.exe" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -54,7 +53,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LoginRunner">
+  <component name="RunManager" selected="JUnit.LoginRunnerTest">
     <configuration name="Scenario: Validate sections diplayed on login page (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
@@ -130,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginRunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CucumberJava" />
       <extension name="coverage">
         <pattern>
@@ -139,7 +138,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.Runners" />
-      <option name="MAIN_CLASS_NAME" value="com.Runners.LoginRunner" />
+      <option name="MAIN_CLASS_NAME" value="com.Runners.LoginRunnerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,7 +146,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginRunner" />
+        <item itemvalue="JUnit.LoginRunnerTest" />
         <item itemvalue="Cucumber java.Scenario: Validate title of login page (1)" />
         <item itemvalue="Cucumber java.Scenario: " />
         <item itemvalue="Cucumber java.Scenario: Validate sections diplayed on login page (1)" />
@@ -181,42 +180,42 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636569805013" />
-    <state width="1493" height="288" key="GridCell.Tab.0.bottom" timestamp="1636558016094">
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom" timestamp="1636573506247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636558016094" />
-    <state width="1493" height="288" key="GridCell.Tab.0.center" timestamp="1636558016094">
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636573506247" />
+    <state width="1493" height="148" key="GridCell.Tab.0.center" timestamp="1636573506247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636558016094" />
-    <state width="1493" height="288" key="GridCell.Tab.0.left" timestamp="1636558016094">
+    <state width="1493" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636573506247" />
+    <state width="1493" height="148" key="GridCell.Tab.0.left" timestamp="1636573506247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636558016094" />
-    <state width="1493" height="288" key="GridCell.Tab.0.right" timestamp="1636558016094">
+    <state width="1493" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636573506247" />
+    <state width="1493" height="148" key="GridCell.Tab.0.right" timestamp="1636573506247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636558016094" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1636557920313">
+    <state width="1493" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636573506247" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1636570525055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636557920313" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1636557920313">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636570525055" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1636570525055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1636557920313" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1636557920313">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1636570525055" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1636570525055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1636557920313" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1636557920313">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1636570525055" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1636570525055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1636557920313" />
-    <state x="279" y="58" key="SettingsEditor" timestamp="1636569872641">
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1636570525055" />
+    <state x="279" y="58" key="SettingsEditor" timestamp="1636570998403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1636569872641" />
+    <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1636570998403" />
     <state x="474" y="168" width="590" height="488" key="find.popup" timestamp="1631107181315">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
