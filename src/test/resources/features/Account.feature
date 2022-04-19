@@ -12,3 +12,4 @@ Feature: Feature to verify account page functionality
     Then the below sections should be displayed
       |Order history and details|
       |My wishlists|
+

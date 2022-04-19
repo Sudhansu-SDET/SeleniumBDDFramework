@@ -20,7 +20,7 @@ public class DriverFactory {
             tldriver.set(new ChromeDriver());
         }
         else if (browser.equals("firefox")){
-            WebDriverManager.chromedriver().setup();
+            WebDriverManager.firefoxdriver().setup();
             tldriver.set(new FirefoxDriver());
         }
 

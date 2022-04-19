@@ -1,5 +1,6 @@
 package com.stepDefination;
 
+import com.Pages.LoginPage;
 import com.qa.factory.DriverFactory;
 import com.qa.util.ElementsUtil;
 import io.cucumber.datatable.DataTable;
@@ -52,7 +53,7 @@ public class LoginStepsTest  {
 
         whenTextboxValueisSet(getEMAIL(),userName);
         whenTextboxValueisSet(getPASSWORD(),password);
-        whenElementisClicked(getSignIn());
+        whenElementisClicked(LoginPage.getSignIn());
     }
 
     @Then("^page title should be (.*)$")
@@ -85,6 +86,10 @@ public class LoginStepsTest  {
 
         }
 
+
+    @Given("User launches the google site in chrome browser")
+    public void userLaunchesTheGoogleSiteInChromeBrowser() {
     }
+}
 
 
