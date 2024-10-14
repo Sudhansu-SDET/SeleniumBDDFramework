@@ -15,22 +15,24 @@ public class DriverFactory {
 
         System.out.println("browser value is " + browser);
 
-        if (browser.equals("chrome")){
-            WebDriverManager.chromedriver().setup();
-            tldriver.set(new ChromeDriver());
-        }
-        else if (browser.equals("firefox")){
-            WebDriverManager.firefoxdriver().setup();
-            tldriver.set(new FirefoxDriver());
-        }
+//        if (browser.equals("chrome")){
+//            WebDriverManager.chromedriver().setup();
+//            tldriver.set(new ChromeDriver());
+//        }
+//        else if (browser.equals("firefox")){
+//            WebDriverManager.firefoxdriver().setup();
+//            tldriver.set(new FirefoxDriver());
+//        }
+//
+//        else {
+//            System.out.println("Incorrect browser");
+//        }
+        driver = new ChromeDriver();
+        return driver;
 
-        else {
-            System.out.println("Incorrect browser");
-        }
-
-        getDriver().manage().deleteAllCookies();
-        getDriver().manage().window().maximize();
-        return getDriver();
+//        getDriver().manage().deleteAllCookies();
+//        getDriver().manage().window().maximize();
+//        return getDriver();
     }
 
 

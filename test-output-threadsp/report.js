@@ -1,25 +1,14 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "45df6a3b-2a2b-46cc-a499-b9bf7bf65f1e",
-    "feature": "Feature to verify account page functionality",
-    "scenario": "Validate sections diplayed on account page",
-    "start": 1636573203654,
+    "id": "0e8df5ec-ebbb-4d2f-bf9a-851adba81171",
+    "feature": "This feature is used to validate google search functionality",
+    "scenario": "Verify user can search in google.com in chrome browser",
+    "start": 1728930045424,
     "group": 1,
     "content": "",
-    "tags": "",
-    "end": 1636573219844,
-    "className": "passed"
-  },
-  {
-    "id": "7c7fa32b-cdd8-48bc-bcd0-e124a875ff59",
-    "feature": "Feature to verify login functionality",
-    "scenario": "Validate title of login page",
-    "start": 1636573219875,
-    "group": 1,
-    "content": "",
-    "tags": "",
-    "end": 1636573230671,
+    "tags": "@mbb,",
+    "end": 1728930058375,
     "className": "passed"
   }
 ]);

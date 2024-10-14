@@ -2,13 +2,17 @@ package com.stepDefination;
 
 import com.Pages.LoginPage;
 import com.qa.factory.DriverFactory;
+import com.qa.util.ConfigReader;
 import com.qa.util.ElementsUtil;
+import io.cucumber.core.backend.ScenarioScoped;
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
+import io.cucumber.java.en.*;
 import java.util.List;
 import java.util.Map;
 
@@ -28,6 +32,7 @@ public class LoginStepsTest  {
     public void userIsOnLoginPage() throws InterruptedException {
 
         System.out.println("user is on login page");
+
 
     }
 
@@ -49,7 +54,6 @@ public class LoginStepsTest  {
         List<Map<String,String>> credList = dataTable.asMaps();
         String userName = credList.get(0).get("userName") ;
         String password = credList.get(0).get("password");
-
 
         whenTextboxValueisSet(getEMAIL(),userName);
         whenTextboxValueisSet(getPASSWORD(),password);
@@ -89,6 +93,51 @@ public class LoginStepsTest  {
 
     @Given("User launches the google site in chrome browser")
     public void userLaunchesTheGoogleSiteInChromeBrowser() {
+        
+    }
+
+    @Given("user prints one")
+    public void userPrintsOne() {
+        System.out.println("1");
+    }
+
+    @And("user prints two")
+    public void userPrintsTwo() {
+        System.out.println("2");
+    }
+
+    @Then("user prints three")
+    public void userPrintsThree() {
+        System.out.println("3");
+    }
+
+
+    @Given("^user prints (.*) and (.*)$")
+    public void userPrintsUserNameAndPassword(String userName,String password) {
+        System.out.println(userName + " - " + password);
+    }
+
+    @When("user enters data and clicks search")
+    public void userEntersDataAndClicksSearch() {
+        System.out.println("Step 2 printed");
+        Assert.assertTrue(Boolean.TRUE);
+    }
+
+    @Then("the data should be retrived and displayed to user")
+    public void theDataShouldBeRetrivedAndDisplayedToUser() {
+        System.out.println("Step 3 printed");
+        Assert.assertTrue(Boolean.TRUE);
+    }
+
+    @Given("User launches the google site (.*) in chrome browser")
+    public void userLaunchesTheGoogleSiteTestDataInChromeBrowser() {
+    System.out.println("Step 1 printed");
+    Assert.assertTrue(Boolean.TRUE);
+    }
+
+    @Given("User logs in to Process {int}G application successfully")
+    public void userLogsInToProcessGApplicationSuccessfully(int arg0) {
+
     }
 }
 

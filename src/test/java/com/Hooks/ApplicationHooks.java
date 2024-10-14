@@ -9,6 +9,7 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -20,29 +21,22 @@ public class ApplicationHooks {
     private ConfigReader configReader;
     Properties prop;
 
-    @Before(order=0)
-    public void getProperty() throws IOException {
+    @Before("@mbb")
+    public void launchBrowser() throws IOException {
+        System.out.println("mbb");
         ConfigReader configReader = new ConfigReader();
         prop = configReader.init_prop();
-    }
-
-    @Before(order=1)
-    public void launchBrowser() throws IOException {
         String browserName = prop.getProperty("browser");
         String url = prop.getProperty("url");
-        DriverFactory driverFactory = new DriverFactory();
-        driver = driverFactory.init_driver(browserName);
+        //DriverFactory driverFactory = new DriverFactory();
+        //driver = driverFactory.init_driver(browserName);
+        driver = new ChromeDriver();
         driver.get(url);
-    }
-
-
-    @After(order = 0)
-    public void quitBrowser(){
-        driver.quit();
     }
 
     @After(order =1)
     public void tearDown(Scenario scenario){
+        driver.quit();
         if (scenario.isFailed()){
 
         String screenshotName = scenario.getName().replaceAll(" " , "_");
